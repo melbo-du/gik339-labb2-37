@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupp: 37</title>
+  <style>
+    body {
+      background-color: rgb(36, 55, 72);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+                   'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    h1 {
+      color: white;
+      margin: 2.5rem;
+    }
+    
+    .container {
+      background-color: rgb(234, 232, 232);
+      padding: 2rem;
+      width: 35rem;
+      border-radius: 0.5rem;
+    }
+
+    .inputfield {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .textfield {
+      width: 60%;
+      padding: 0.2rem;
+    }
+    
+    .checkbox {
+      margin-right: 20.75rem;
+    }
+
+    .textfield,
+    #remove,
+    #result {
+      border: 0.12rem solid rgb(156, 156, 156);
+      border-radius: 0.3rem;
+    }
+
+    #remove {
+      padding-block: 0.4rem;
+      padding-inline: 1.3rem;
+      margin-bottom: 0.7rem;
+      background-image: linear-gradient(to bottom, rgba(226, 236, 246, 0.6), 
+                        rgba(173, 204, 231, 0.6));
+    }
+
+    #remove:hover{
+      cursor: pointer;
+    }
+
+    #remove:active {
+      background-image: linear-gradient(to bottom, rgba(162, 190, 218, 0.6), 
+                        rgba(102, 131, 156, 0.6));
+    }
+
+    #result {
+      padding: 0.5rem;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Labb 2 - Grupp 37</h1>
+  <div class="container">
+    <div class="inputfield">
+      <label for="color">Färg:</label>
+      <input type="text" name="color" id="color" class="textfield">
+    </div>
+    <div class="inputfield">
+      <label for="content">Innehåll:</label>
+      <input type="text" name="content" id="content" class="textfield">
+    </div>
+    <div class="inputfield">
+      <label for="divStyle">Stil på box:</label>
+      <input type="checkbox" name="divStyle" id="divStyle" class="checkbox">
+    </div>
+    <button id="remove">Ta bort</button>
+    <div id="result">Lägg till färg och nytt innehåll!</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
